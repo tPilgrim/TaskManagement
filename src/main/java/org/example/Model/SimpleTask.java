@@ -1,6 +1,8 @@
 package org.example.Model;
 
-class SimpleTask extends Task {
+import java.io.Serializable;
+
+public class SimpleTask extends Task  implements Serializable {
     private int startHour;
     private int endHour;
 
@@ -12,6 +14,10 @@ class SimpleTask extends Task {
 
     @Override
     public int estimateDuration() {
-        return endHour - startHour;
+        if(endHour >= startHour) {
+            return endHour - startHour;
+        } else {
+            return 24 - startHour + endHour;
+        }
     }
 }

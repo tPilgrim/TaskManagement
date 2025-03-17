@@ -1,6 +1,8 @@
 package org.example.Model;
 
-public abstract class Task {
+import java.io.Serializable;
+
+public abstract class Task  implements Serializable {
     protected int idTask;
     protected boolean statusTask;
 
@@ -10,6 +12,10 @@ public abstract class Task {
     }
 
     public abstract int estimateDuration();
+
+    public boolean getStatusTask() {
+        return statusTask;
+    }
 
     public void setStatusTask(boolean statusTask) {
         this.statusTask = statusTask;

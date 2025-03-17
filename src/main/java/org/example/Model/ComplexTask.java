@@ -1,9 +1,10 @@
 package org.example.Model;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-class ComplexTask extends Task {
+public class ComplexTask extends Task  implements Serializable {
     private List<Task> subTasks = new ArrayList<>();
 
     public ComplexTask(int idTask) {
@@ -18,8 +19,17 @@ class ComplexTask extends Task {
         subTasks.remove(task);
     }
 
+    public List<Task> getSubTasks() {
+        return subTasks;
+    }
+
     @Override
     public int estimateDuration() {
-        return 0;
+        int totalDuration = 0;
+        for (Task task : subTasks) {
+            totalDuration += task.estimateDuration();
+        }
+
+        return totalDuration;
     }
 }

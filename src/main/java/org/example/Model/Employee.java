@@ -1,6 +1,8 @@
 package org.example.Model;
 
-public class Employee {
+import java.io.Serializable;
+
+public class Employee  implements Serializable {
     private int idEmployee;
     private String name;
 
@@ -14,6 +16,11 @@ public class Employee {
     }
 
     public String getName() {
+        return name;
+    }
+
+    @Override
+    public String toString() {
         return name;
     }
 }
