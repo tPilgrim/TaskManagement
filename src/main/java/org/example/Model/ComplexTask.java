@@ -4,7 +4,7 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ComplexTask extends Task  implements Serializable {
+public class ComplexTask extends Task implements Serializable {
     private List<Task> subTasks = new ArrayList<>();
 
     public ComplexTask(int idTask) {
@@ -13,10 +13,6 @@ public class ComplexTask extends Task  implements Serializable {
 
     public void addTask(Task task) {
         subTasks.add(task);
-    }
-
-    public void deleteTask(Task task) {
-        subTasks.remove(task);
     }
 
     public List<Task> getSubTasks() {

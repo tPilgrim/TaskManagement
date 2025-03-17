@@ -9,10 +9,8 @@ import java.util.List;
 import java.util.Map;
 
 public class Utility {
-    private static List<Employee> filteredEmployees;
-
     public static List<Employee> filterEmployees(TaskManagement taskManagement) {
-        filteredEmployees = new ArrayList<>();
+        List<Employee> filteredEmployees = new ArrayList<>();
 
         for (Employee employee : taskManagement.taskMap.keySet()) {
             if (taskManagement.calculateEmployeeWorkDuration(employee.getIdEmployee()) > 40) {

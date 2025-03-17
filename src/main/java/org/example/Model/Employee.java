@@ -2,7 +2,7 @@ package org.example.Model;
 
 import java.io.Serializable;
 
-public class Employee  implements Serializable {
+public class Employee implements Serializable {
     private int idEmployee;
     private String name;
 

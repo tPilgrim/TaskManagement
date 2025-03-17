@@ -1,0 +1,101 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36" version="26.1.1">
+  <diagram name="Page-1" id="Ht2YVetU_vmlJL-asFGt">
+    <mxGraphModel dx="4075" dy="1633" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="JMoMbs4hP5nUFc1s998z-1" value="Employee" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-30" y="290" width="160" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="JMoMbs4hP5nUFc1s998z-2" value="&lt;div&gt;- idEmployee: int&lt;/div&gt;&lt;div&gt;- name: String&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ getIdEmplyee(): int&lt;/div&gt;&lt;div&gt;+ getName(): String&lt;/div&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;whiteSpace=wrap;" vertex="1" parent="JMoMbs4hP5nUFc1s998z-1">
+          <mxGeometry y="50" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="JMoMbs4hP5nUFc1s998z-30" value="Task" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="525" width="240" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="JMoMbs4hP5nUFc1s998z-31" value="- idTask: int&lt;div&gt;- statusTask: boolean&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ estimateDurastion(): int&lt;/div&gt;&lt;div&gt;+ getStatusTask(): boolean&lt;/div&gt;&lt;div&gt;+ setStatusTask(statusTask: boolean): void&lt;/div&gt;&lt;div&gt;+ getIdTask(): int&lt;/div&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;whiteSpace=wrap;" vertex="1" parent="JMoMbs4hP5nUFc1s998z-30">
+          <mxGeometry y="50" width="240" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="JMoMbs4hP5nUFc1s998z-52" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="JMoMbs4hP5nUFc1s998z-32" target="JMoMbs4hP5nUFc1s998z-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JMoMbs4hP5nUFc1s998z-32" value="SimpleTask" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="780" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="JMoMbs4hP5nUFc1s998z-33" value="- startHour: int&lt;div&gt;- endHour: int&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ estimateDuration(): int&lt;/div&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;whiteSpace=wrap;" vertex="1" parent="JMoMbs4hP5nUFc1s998z-32">
+          <mxGeometry y="50" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="JMoMbs4hP5nUFc1s998z-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="JMoMbs4hP5nUFc1s998z-35" target="JMoMbs4hP5nUFc1s998z-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JMoMbs4hP5nUFc1s998z-35" value="ComplexTask" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="780" width="170" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="JMoMbs4hP5nUFc1s998z-36" value="- subTasks: List&amp;lt;Task&amp;gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ addTask(task: Task): void&lt;/div&gt;&lt;div&gt;+ getSubTasks(): List&amp;lt;Task&amp;gt;&lt;/div&gt;&lt;div&gt;+ estimateDuration(): int&lt;/div&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;whiteSpace=wrap;" vertex="1" parent="JMoMbs4hP5nUFc1s998z-35">
+          <mxGeometry y="50" width="170" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="JMoMbs4hP5nUFc1s998z-37" value="Utility" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-710" y="920" width="560" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="JMoMbs4hP5nUFc1s998z-38" value="+ filterEmplyees(taskManagement: TaskManagement): List&amp;lt;Emplyee&amp;gt;&lt;div&gt;+ calculateTaskStatusCount(&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;taskManagement: TaskManagement&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;): Map&amp;lt;String, Map&amp;lt;String, Integer&amp;gt;&amp;gt;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;whiteSpace=wrap;" vertex="1" parent="JMoMbs4hP5nUFc1s998z-37">
+          <mxGeometry y="50" width="560" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="JMoMbs4hP5nUFc1s998z-39" value="DataManager" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-585" y="170" width="310" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="JMoMbs4hP5nUFc1s998z-40" value="- FILE_NAME: String&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ saveData(&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;taskManagement: TaskManagement&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;): void&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+ loadData(): TaskManagement&lt;/span&gt;&lt;/div&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;whiteSpace=wrap;" vertex="1" parent="JMoMbs4hP5nUFc1s998z-39">
+          <mxGeometry y="50" width="310" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="JMoMbs4hP5nUFc1s998z-41" value="TaskManagement" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-150" y="490" width="400" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="JMoMbs4hP5nUFc1s998z-42" value="- taskMap: Map&amp;lt;Employee, List&amp;lt;Task&amp;gt;&amp;gt;&lt;div&gt;- tasks: List&amp;lt;Task&amp;gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ addEmplyee(emplyee: Employee): void&lt;/div&gt;&lt;div&gt;+ addTask(task: Task): void&lt;/div&gt;&lt;div&gt;+ getTasks(): List&amp;lt;Task&amp;gt;&lt;/div&gt;&lt;div&gt;+ assignTaskToEmplyee(idEmplyee: int, task: Task): void&lt;/div&gt;&lt;div&gt;+ assignComplexTask(idEmplyee: int, complexTask: ComplexTask): void&lt;/div&gt;&lt;div&gt;+ calculateEmplyeeWorkDuration(idEmplyee: int): int&lt;/div&gt;&lt;div&gt;+ modifyTaskStatus(idEmplyee: int, idTask: int): void&lt;/div&gt;&lt;div&gt;+ findEmplyee(idEmplyee: int): Emplyee&lt;/div&gt;&lt;div&gt;+ getTaskById(idTask: int): Task&lt;/div&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;whiteSpace=wrap;" vertex="1" parent="JMoMbs4hP5nUFc1s998z-41">
+          <mxGeometry y="50" width="400" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="JMoMbs4hP5nUFc1s998z-58" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="JMoMbs4hP5nUFc1s998z-43" target="JMoMbs4hP5nUFc1s998z-40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JMoMbs4hP5nUFc1s998z-43" value="TaskManagementGUI" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-620" y="330" width="380" height="550" as="geometry" />
+        </mxCell>
+        <mxCell id="JMoMbs4hP5nUFc1s998z-44" value="- mainFrame: JFrame&lt;div&gt;- emplyeeList: JList&amp;lt;String&amp;gt;&lt;/div&gt;&lt;div&gt;- taskList: JList&amp;lt;String&amp;gt;&lt;/div&gt;&lt;div&gt;- emplyeeListModel: DefaultListModel&amp;lt;String&amp;gt;&lt;/div&gt;&lt;div&gt;- taskListModel: DefaultListModel&amp;lt;String&amp;gt;&lt;/div&gt;&lt;div&gt;- taskManagement: TaskManagement&lt;/div&gt;&lt;div&gt;- employeeCounter: int&lt;/div&gt;&lt;div&gt;- taskCounter: int&lt;/div&gt;&lt;div&gt;- addTaskButton: JButton&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ prepareGUI(): void&lt;/div&gt;&lt;div&gt;+ emplyeePanel(): JPanel&lt;/div&gt;&lt;div&gt;+ taskPanel(): JPanel&lt;/div&gt;&lt;div&gt;+ deselectButton(): JPanel&lt;/div&gt;&lt;div&gt;+ assignTaskButton(): JPanel&lt;/div&gt;&lt;div&gt;+ modifyStatusButton(): JPanel&lt;/div&gt;&lt;div&gt;+ viewStatisticsButton(): JPanel&lt;/div&gt;&lt;div&gt;+ addEmplyee(): void&lt;/div&gt;&lt;div&gt;+ addTask(): void&lt;/div&gt;&lt;div&gt;+ addNewTask(): void&lt;/div&gt;&lt;div&gt;+ createSimpleTask(): Task&lt;/div&gt;&lt;div&gt;+ addSubTask(selectedTask: String): void&lt;/div&gt;&lt;div&gt;+ addSubTaskToComplexTask(selectedTask: ComplexTask): void&lt;/div&gt;&lt;div&gt;+ assignTaskToEmplyee(): void&lt;/div&gt;&lt;div&gt;+ updateTaskList(): void&lt;/div&gt;&lt;div&gt;+ updateEmplyeeList(): void&lt;/div&gt;&lt;div&gt;+ addTaskToList(task: Task): void&lt;/div&gt;&lt;div&gt;+ addSubtaskToList(task: Task, indentLevel: int): void&lt;/div&gt;&lt;div&gt;+ isTaskInList(task: Task): boolean&lt;/div&gt;&lt;div&gt;+ modifyTaskStatus(): void&lt;/div&gt;&lt;div&gt;+ areAllSubtasksCompleted(complexTask: ComplexTask): boolean&lt;/div&gt;&lt;div&gt;+ extractTaskId(taskString: String): int&lt;/div&gt;&lt;div&gt;+ toggleAddTaskButton(): void&lt;/div&gt;&lt;div&gt;+ viewStatistics(): void&lt;/div&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;whiteSpace=wrap;" vertex="1" parent="JMoMbs4hP5nUFc1s998z-43">
+          <mxGeometry y="50" width="380" height="500" as="geometry" />
+        </mxCell>
+        <mxCell id="JMoMbs4hP5nUFc1s998z-48" value="" style="endArrow=diamondThin;endFill=1;endSize=24;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="JMoMbs4hP5nUFc1s998z-2" target="JMoMbs4hP5nUFc1s998z-41">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="70" y="450" as="sourcePoint" />
+            <mxPoint x="230" y="450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JMoMbs4hP5nUFc1s998z-49" value="" style="endArrow=diamondThin;endFill=1;endSize=24;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="JMoMbs4hP5nUFc1s998z-31" target="JMoMbs4hP5nUFc1s998z-42">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="290" y="740" as="sourcePoint" />
+            <mxPoint x="450" y="740" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JMoMbs4hP5nUFc1s998z-53" value="" style="endArrow=diamondThin;endFill=1;endSize=24;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="JMoMbs4hP5nUFc1s998z-31" target="JMoMbs4hP5nUFc1s998z-36">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="700" y="600" as="sourcePoint" />
+            <mxPoint x="730" y="890" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="720" y="630" />
+              <mxPoint x="720" y="870" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JMoMbs4hP5nUFc1s998z-56" value="" style="endArrow=diamondThin;endFill=1;endSize=24;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="JMoMbs4hP5nUFc1s998z-42" target="JMoMbs4hP5nUFc1s998z-44">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="-200" y="650" as="sourcePoint" />
+            <mxPoint x="-40" y="650" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JMoMbs4hP5nUFc1s998z-57" value="" style="endArrow=diamondThin;endFill=1;endSize=24;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="JMoMbs4hP5nUFc1s998z-37" target="JMoMbs4hP5nUFc1s998z-44">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="-450" y="1060" as="sourcePoint" />
+            <mxPoint x="-290" y="1060" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
